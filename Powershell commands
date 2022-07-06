@@ -1,0 +1,4 @@
+https://stackoverflow.com/questions/1954203/timestamp-on-file-name-using-powershell
+
+$(((get-date).ToUniversalTime()).ToString("yyyyMMddTHHmmssZ"))
+
