@@ -1,0 +1,4 @@
+https://stackoverflow.com/questions/8810580/keep-x-number-of-files-and-delete-all-others-powershell
+
+gci C:\temp\ -Recurse| where{-not $_.PsIsContainer}| sort CreationTime -desc| 
+    select -Skip 10| Remove-Item -Force
